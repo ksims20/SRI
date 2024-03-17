@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Matters</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+  <body>
+
+    <header>
+      <a href="#" class="topleft">Your Mental Health Matters</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <a href="Inspiriation.html">Inspiration</a>
+          <a href="https://www.samhsa.gov/find-help/national-helpline">SAMHSA</a>
+          <a href="https://www.vayahealth.com/get-to-know-us/contact-us/">VAYA </a>
+          <a href="https://www.988lifeline.org">988</a>
+          <a href="https://www.naminc.org/important-numbers-mental-health/">NAMI</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="home">
+        
+      <video id="video-1" class="video-slide active" autoplay muted loop>
+        <source src="1.mp4" type="video/mp4">
+      </video>
+
+      <video id="video-2" class="video-slide" autoplay muted loop>
+        <source src="2.mp4" type="video/mp4">
+      </video>
+      
+      <video id="video-3" class="video-slide" autoplay muted loop>
+        <source src="3.mp4" type="video/mp4">
+      </video>
+
+      <video id="video-4" class="video-slide" autoplay muted loop>
+        <source src="4.mp4" type="video/mp4">
+      </video>
+
+      <video id="video-5" class="video-slide" autoplay muted loop>
+        <source src="5.mp4" type="video/mp4">
+      </video>
+
+        <video id="video-6" class="video-slide"  autoplay muted loop>
+          <source src="6.mp4" type="video/mp4">
+        </video>
+
+        <video id="video-7" class="video-slide"  autoplay muted loop>
+          <source src="7.mp4" type="video/mp4">
+        </video>
+
+        
+      <div class="content active">
+          
+          <h1>How Social Media affects mental health <br></h1>
+        <p>Social media sites have become increasingly popular over the years. Frequent use of these sites can cause an adverse effect on the mental health. Studies have shown that individuals who use social media more than 7 hours were more than twice likely to suffer from depression. Most people use social media to observe images of others, which give rise to social comparison. </p>
+       
+          
+      </div>
+        
+      <div class="content">
+        <h1>Social Media effects communcation </h1>
+        <p class="data">Social Media has a negative impact on social communication, and social skills. It causes physical isolation, because people are not communicating face-to-face. Younger individuals prefer to stay online most of the time, instead of spending time with their family. This can damage relationships, and again, lead to poor communication.  </p>
+       
+      </div>
+      <div class="content">
+        <h1>Effects of social media on cyberbullying </h1>
+        <p> Prior to social media, there were school builles. But today people are being targetted through the internet, sometimes anonymously. Nearly 59% of US teens have reportedly been builled or harrassed online [Anderson,2018]. Cyberbullied individuals may experience low self-esteem, depression, fear of others, anxiety, and more. In addition, it may avoid socializing, cause trouble sleeping, or give an increase desire to miss work or school. </p>
+        
+      </div>
+        
+      <div class="content">
+        <h1>Unrealistic Expectations </h1>
+        <p id="diff">
+            
+          <p>     <b>    "I wish I could look like them." </b>
+         
+            <br> 
+            <br>
+          
+           <b> When scrolling through social media, users tend to see certain body types that are praised by others, making us believe that since our bodies are different, that we aren't as good. Often times these photos are filtered, and in reality making up a small percentage, although they are all over social media. Some may find themselves comparing their looks to those they see online.        </b> 
+          </p>
+       
+      </div>
+        
+      <div class="content">
+        <h1> Minimizing the effects </h1>
+        <p>There are few ways to minimize the effects of prolonged social media usage. For instance, getting an app or using the built in app to track app usage. Replace some of that time with social activies, such as working out, spending time in nature, etc. Turning off notifications can help, in additon to turning off your phone completely. </p>
+        
+      </div>
+        
+        <div class="content">
+            <h1 class="graph"> Positive Effects </h1>
+             <p> Despite the drawbacks, it does help connect communnities and individuals all across the world. It can be educational, sometimes, and it can give a voice to those who go underheard in society. In addition, these communities can give one a sense of belonging, which can actually improve their mental health. Creative feedback is another one, posting your projects online can gain you postiive feedback.</p> 
+        </div> 
+            
+            
+        <div class="content">
+        <h1 id="12">Contact for help</h1>
+        <p>SAMHSA National Hotline: 1-800-662-4357 <br>Vaya Health in Asheville: 1-800-849-6127 <br> NC Suicide Prevention Line: 1-800-273-8255 </p>
+        
+      </div>
+  
+      <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+          <div class="nav-btn"></div>
+          <div class="nav-btn"></div>
+        
+          
+      </div>
+    </section>
+      
+      
+<script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+      
+      <script type="text/javascript">
+      
+          const text = baffle(".data");
+          text.set({
+              characters : '▓░░ ░▓░>> ░█▓▒▓ █▓/ >███▒ ▓░▒> ▒░< ░>▓█ █░▓/',
+              speed: 200
+          });
+          text.start();
+          text.reveal(10000);
+          
+      
+      </script>
+      
+      
+    <script type="text/javascript">
+        
+    //Javacript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+
+//    Javacript for video slider navigation
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function(manual){
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+    </script>
+
+  </body>
+</html>
